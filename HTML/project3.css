@@ -1,0 +1,20 @@
+.cls{
+	color: red;
+	background: hsla(240, 100%, 50%, 1.0);
+}
+.cl{
+	color: rgb(234, 210, 110);
+	background: skyblue;
+}
+.std{
+	color: rgba(234, 203, 203,0.5);
+	background: blueviolet;
+}
+.hd{
+	color: hsl(120, 100%, 50%);
+	border: 3px solid rgb(254, 233, 123);
+}
+.ttt{
+	color: hsl(345, 100%, 50%);
+	border: 100px solid hsl(270, 100%, 50%);
+}
