@@ -1,0 +1,20 @@
+.dv{
+	height: 140px;
+	width: 160px;
+	
+	outline: 15px solid blueviolet;
+	outline-style: dotted;
+	border: 15px solid black;
+	margin-bottom: 15px;
+	background: orange;
+
+}
+.dv2{
+	height: 140px;
+	width: 160px;
+	
+	outline: 15px solid blue;
+	border: 15px solid black;
+	background: limegreen;
+	margin-top: 15px;
+}

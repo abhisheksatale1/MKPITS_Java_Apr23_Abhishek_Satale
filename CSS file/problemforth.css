@@ -1,0 +1,19 @@
+img{
+	height: 150px;
+	width: 200px;
+	margin: 15px;
+}
+.hd{
+	height: 50px;
+	width: 600px;
+	text-align: center;
+	border: 10px solid burlywood;
+	background: orange;
+
+}
+.dv{
+	height: 200px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
