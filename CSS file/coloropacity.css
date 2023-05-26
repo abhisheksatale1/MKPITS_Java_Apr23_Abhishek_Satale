@@ -1,0 +1,19 @@
+.dv1 {
+  display: flex;
+  margin: 15px;
+  height: 400px;
+  width: 400px;
+  background: hsl(167, 100%, 50%);
+}
+.div2 {
+  width: 200px;
+  height: 200px;
+  background: hsl(188, 100%, 37%);
+  margin: 15px;
+}
+.div3 {
+  width: 200px;
+  height: 200px;
+  background: hsl(188, 100%, 37%, .5);
+  margin: 15px;
+}
