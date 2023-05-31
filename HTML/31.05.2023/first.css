@@ -1,0 +1,44 @@
+.img1{
+	height: 40px;
+	width: 50px;
+	
+	
+}
+li a{
+	display: block;
+	margin-right: 60px;
+	margin: 15px;
+
+
+	
+	
+	
+}
+ul{
+	background-color: lightgrey;
+	height: 100%;
+	width: 300px;
+	text-decoration: none;
+}
+ul:hover{
+	background-color: aqua;
+
+}
+li a{
+	display: block;
+	margin-top: 20px;
+
+}
+li a:hover{
+	background-color: lightgrey;
+	border: 2px solid orangered;
+	box-shadow: lightgrey;
+}
+ul.a:hover{
+	background-color: lightgrey;
+}
+.home:active{
+	background-color: lightgrey;
+	border: 2px solid orangered;
+	box-shadow: lightgrey;
+}
