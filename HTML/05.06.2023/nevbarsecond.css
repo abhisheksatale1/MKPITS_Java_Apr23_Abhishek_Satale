@@ -1,0 +1,49 @@
+li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.mainul{
+    padding: 20px;
+    height: 60px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+a{
+    text-decoration: none;
+}
+.dropdown{
+    position: relative;
+
+}
+.sub{
+    position: absolute;
+    height: 200px;
+    width: 130px;
+    background-color: rgb(114, 207, 147);
+    display: none;
+    
+}
+.dropdown:hover .sub{
+    position: absolute;
+    height: 200px;
+    width: 130px;
+    background-color: rgb(114, 207, 147);
+    display: block;
+    text-align: center;
+    border-radius: 90px;
+    border-color: 3px solid blueviolet;
+
+}
+.dropdown .sub li:hover{
+    display: block;
+    border-radius: 10px;
+    background-color: aquamarine;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 10px 10px rgb(42, 103, 133),20px 20px rgb(150, 187, 112);
+    
+
+}
