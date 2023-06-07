@@ -1,0 +1,13 @@
+body{
+    background-color: blueviolet;
+
+}
+div{
+    background-color: aqua;
+}
+video{
+    width: 100%;
+}
+.container-fluid{
+    position: fixed;
+}
