@@ -1,3 +1,7 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .img1{
     height: 100%;
     width: 100%;
@@ -12,9 +16,18 @@
     background-color: rgb(113, 139, 143);
     color: black;
     text-align: center;
+    height: 50px;
+    width: 500px;
+    left: 300px;
+   
 }
 .para{
     font-size: 20px;
     background-color: darkgray;
     opacity: 0.3;
+    height: 300px;
+    width: 864px;
+    padding: 20px;
+    left: 800px;
+    margin-left: 200px;
 }
