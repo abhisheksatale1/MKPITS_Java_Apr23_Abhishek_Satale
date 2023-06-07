@@ -1,0 +1,12 @@
+video{
+    width: 100%;
+    position: absolute;
+    background-attachment: fixed;
+}
+nav{
+    position: relative;
+    background-color: black;
+}
+*{
+    background-color: rgb(215, 1, 1);
+}

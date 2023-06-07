@@ -15,11 +15,11 @@
 }
 .main video{
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .main .text{
-    position: relative;
+    position: absolute;
     color: white;
     max-width: 700px;
     background-color: black;
