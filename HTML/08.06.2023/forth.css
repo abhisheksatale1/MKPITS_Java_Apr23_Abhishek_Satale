@@ -50,8 +50,15 @@
     
 }
 .main1{
-    background-color: #577b95;
+    background-color: beige;
 }
 .his1{
     border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 5px 5px ;
+    
+}
+.his1 :hover{
+    border-color: 10px  rgb(123, 154, 156);
+    
 }
