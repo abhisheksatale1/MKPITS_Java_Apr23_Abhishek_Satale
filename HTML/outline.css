@@ -1,0 +1,18 @@
+.cls{
+	background-color: hsl(357, 100%, 50%);
+	height: 150px;
+	width: 200px;
+	outline: 5px solid slateblue;
+	border: 5px solid blanchedalmond;
+	padding: 14px;
+	margin: 15px;
+
+}
+.dv{
+	background-color: hsl(245, 100%, 50%);
+	height: 130px;
+	width: 210px;
+	outline: 5px solid hsl(45, 100%, 50%);
+	border: 5px solid red;
+	padding: 13px;
+}

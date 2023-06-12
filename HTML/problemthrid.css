@@ -1,0 +1,6 @@
+.vid{
+	height: 180px;
+	width: 180px;
+	border-radius: 50% ;
+	border: 10px solid darkred;
+}

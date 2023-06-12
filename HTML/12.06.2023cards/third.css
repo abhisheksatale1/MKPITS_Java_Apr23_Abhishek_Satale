@@ -1,0 +1,23 @@
+.main{
+    background-color: aqua;
+    height: 50px;
+    width: 100%;
+}
+ul{
+display: flex;
+justify-content: space-around;
+list-style: none;
+}
+li a{
+    text-decoration: none;
+    text-shadow: 30x 30px snow;
+    color: blueviolet;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+li:hover{
+   background-color: bisque; 
+   border-radius: 20px;
+   text-shadow: 3px 5px rgb(53, 199, 9);
+
+}
+    

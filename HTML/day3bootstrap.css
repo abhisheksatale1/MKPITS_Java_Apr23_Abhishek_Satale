@@ -1,0 +1,9 @@
+div{
+	height: 150px;
+	width: 150px;
+	background-color: lemonchiffon;
+}
+.border{
+	height: 200px;
+	border-color: 40px solid darkred;
+}

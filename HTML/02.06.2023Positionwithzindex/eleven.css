@@ -1,0 +1,32 @@
+.cl1{
+    height: 150px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: silver;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    z-index: 1;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px; 
+}
+.cl2{
+    height: 500px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: pink;
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    
+}
+.cl3{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    z-index: 3;
+    top: 100px;
+
+}

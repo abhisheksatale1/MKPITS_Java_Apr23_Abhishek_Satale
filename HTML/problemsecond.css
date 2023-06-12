@@ -23,5 +23,25 @@
 	}
 .img4{
 	border-radius: 50px 20px 10px 5px;
+	margin: 30px;
 
+}
+.img5{
+	border-radius: 50%;
+	border: 15px solid skyblue;
+	margin: 30px;
+}
+.img6{
+	border: 15px solid red;
+
+	border-radius: 50px 20px 10px 5px;
+	background-color: palevioletred;
+	border-bottom: yellowgreen;
+	border-top: green;
+	background-top:0px solid green;
+	border-left: 5px solid indigo;
+	border-bottom: 5px solid white;
+}
+.img7{
+	
 }

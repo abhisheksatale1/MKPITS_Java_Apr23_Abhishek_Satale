@@ -1,0 +1,19 @@
+.btn{
+    background-color: aqua;
+    position: relative;
+    display: inline-block;
+    padding: 16px 24px;
+    font-size: 25px;
+    border-radius: 50px;
+}
+.img{
+    display: none;
+    position: absolute;
+}
+.btn:hover .img{
+    display: block;
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 6px darkmagenta;
+}

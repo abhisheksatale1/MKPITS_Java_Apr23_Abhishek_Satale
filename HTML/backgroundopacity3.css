@@ -1,0 +1,15 @@
+.dv{
+	height: 150px;
+	width: 200px;
+	background: grey;
+	opacity: 0.8;
+}
+.dv2{
+	height:300px;
+	width: 300px;
+	background: white;
+	text-align: center;
+}
+.bd{
+	background: blueviolet;
+}

@@ -1,0 +1,28 @@
+.dv{
+    height: 100px;
+    width: 600px;
+    background-color: blue;
+    position: absolute;
+    opacity: 0.4;
+}
+.dv1{
+    height: 600px;
+    width: 100px;
+    background-color: aqua;
+    position: relative;
+}
+.dv2{
+    height: 100px;
+    width: 600px;
+    position: relative;
+    background-color: blue;
+    top: 100px;
+}
+.dv3{
+    height: 600px;
+    width: 100px;
+    background-color: brown;
+    position: absolute;
+    left: 550px;
+    top: 5px;
+}

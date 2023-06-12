@@ -1,0 +1,59 @@
+.img1{
+	height: 40px;
+	width: 50px;
+	border-radius: 50%;
+	
+	
+}
+li a{
+	display: block;
+	margin-right: 60px;
+	margin: 15px;
+
+
+	
+	
+	
+}
+ul{
+	background-color: lightgrey;
+	height: 100%;
+	width: 200px;
+	text-decoration: none;
+	position: fixed;
+	overflow: auto;
+}
+ul:hover{
+	background-color: aqua;
+
+}
+li a{
+	display: block;
+	margin-top: 20px;
+	text-decoration: none;
+
+}
+li a:hover{
+	background-color: lightgrey;
+	border: 2px solid orangered;
+	box-shadow: lightgrey;
+
+}
+ul.a:hover{
+	background-color: lightgrey, navajowhite, darkblue;
+
+}
+.home:active{
+	background-color: lightgrey;
+	border: 2px solid orangered;
+	box-shadow: lightgrey;
+}
+.par{
+	overflow: auto;
+	margin-left: 260px;
+	background-color: burlywood;
+
+}
+*{
+	margin: 0;
+	}

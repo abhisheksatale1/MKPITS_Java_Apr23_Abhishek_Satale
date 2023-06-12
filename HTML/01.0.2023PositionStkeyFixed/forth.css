@@ -1,0 +1,27 @@
+.ul{
+	background-color: lightgrey;
+	height: 200px;
+	width: 100%;
+	text-decoration: none;
+	position: absolute;
+	overflow: auto;
+}
+.img1{
+	height: 40px;
+	width: 50px;
+	border-radius: 50%;
+	}
+
+	ul{
+	background-color: lightgrey;
+	height: 200px;
+	width: 100%;
+	text-decoration: none;
+	position: static;
+	overflow: auto;
+	top: 0;
+}
+.par{
+	background-color: greenyellow;
+	border-radius: 20px;
+}

@@ -1,0 +1,39 @@
+.dv {
+  display: flex;
+}
+.first {
+  width: 100px;
+  height: 100px;
+  background: indianred;
+  opacity: 1;
+}
+.second {
+  width: 100px;
+  height: 100px;
+  background: indianred;
+  opacity: .8;
+}
+.third {
+  width: 100px;
+  height: 100px;
+  background: indianred;
+  opacity: .6;
+}
+.fourth {
+  width: 100px;
+  height: 100px;
+  background: indianred;
+  opacity: .4;
+}
+.fifth {
+  width: 100px;
+  height: 100px;
+  background: indianred;
+  opacity: .2;
+}
+.sixth {
+  width: 100px;
+  height: 100px;
+  background: indianred;
+  opacity: 0;
+}

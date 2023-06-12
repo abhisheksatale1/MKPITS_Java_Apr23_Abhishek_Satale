@@ -1,0 +1,78 @@
+*{
+    border-radius: 40px;
+}
+.mainul{
+    background-color: chocolate;
+    display: inline-block;
+    height: 150px;
+    width: 100%;
+    
+    
+}
+li{
+    display: inline-block;
+    font-size: 19px;
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+}
+.dropdowm{
+    position: relative;
+}
+.sub{
+    position: absolute;
+    height: 200px;
+    width: 130px;
+    background-color: rgb(114, 207, 147);
+    display: none;
+}
+.sub2{
+    position: absolute;
+    height: 200px;
+    width: 130px;
+    background-color: rgb(114, 207, 147);
+    display: none;
+}
+.dropdown:hover .sub{
+    position: absolute;
+    
+    background-color: rgb(114, 207, 147);
+    display: block;
+    text-align: center;
+    border-radius: 90px;
+    border-color: 3px solid blueviolet;
+    overflow: 300px;
+
+}
+.dropdown .sub li:hover{
+    display: block;
+    border-radius: 10px;
+    background-color: aquamarine;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 10px 10px rgb(42, 103, 133),20px 20px rgb(150, 187, 112);
+    
+
+}
+.dropdown:hover .sub2{
+    position: absolute;
+    
+    background-color: rgb(114, 207, 147);
+    display: block;
+    text-align: center;
+    border-radius: 90px;
+    border-color: 3px solid blueviolet;
+    overflow: 300px;
+
+}
+.dropdown .sub2 li:hover{
+    display: block;
+    border-radius: 10px;
+    background-color: aquamarine;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 10px 10px rgb(42, 103, 133),20px 20px rgb(150, 187, 112);
+    
+
+}
