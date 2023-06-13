@@ -1,0 +1,8 @@
+.table-hover{
+    color: rgb(35, 191, 191);
+    background-color: black;
+}
+.table-hover:hover{
+    color: rgb(35, 191, 191);
+    background-color: black;
+}

@@ -1,0 +1,16 @@
+.card-img-top{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 40px;
+}
+.card{
+    margin: 40px;
+}
+i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
