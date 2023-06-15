@@ -1,0 +1,26 @@
+.img1{
+    border-radius: 50%;
+}
+.aboutus{
+    text-align: center;
+    font-size: 30px;
+    background-color: aquamarine;
+}
+.logo{
+    height: 50px;
+    width: 130px;
+    align-items: center;
+    float: center;
+    
+}
+li{
+    padding-left: 40px;
+}
+.div2{
+    height: 20px;
+    width: 100%;
+}
+.aboutusimg{
+    height: 400px;
+    width: 500px;
+}
