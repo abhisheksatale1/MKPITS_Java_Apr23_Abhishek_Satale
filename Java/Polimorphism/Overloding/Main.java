@@ -42,5 +42,11 @@ public class Main{
 	double Area = area.areadouble(5);
 	System.out.println(Area);
 	
+	
+// Algebric Expression formula (a+b)2= a2+2ab+b2
+
+	Formula rem = new Formula();
+	int Ans = rem.FormulaInteger(4,3);
+	System.out.println(Ans);
 }
 }
