@@ -28,6 +28,11 @@ class Main{
 		ModulusOverriding modulus = new Modulus();
 		float modu = modulus.modul(5,6,7);
 		System.out.println(modu);
+		
+		
+		Area value = new AreaofTriangle();
+		float vlu = value.area(5,6);
+		System.out.println(vlu);
 	}
 }
 
