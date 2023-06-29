@@ -1,9 +1,11 @@
 class Main{
 	public static void main(String args[]){
+		PatternFirst patternfirst = new PatternFirst();
+		patternfirst.pyramidPattern();
 		
-		
-		 patternSecond Patternsecond = new patternSecond();
-		 patternsecond.RightAngleTriangle();
+		 		 
+		 PatternThird patternthird = new PatternThird();
+			patternthird.triangle();
 	}
 }
 	
