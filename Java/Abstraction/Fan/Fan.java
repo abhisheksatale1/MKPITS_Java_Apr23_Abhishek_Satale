@@ -1,4 +1,3 @@
 import java.util.*;
-interface Shape{
+interface Fan{
 }
-s
