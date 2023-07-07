@@ -5,8 +5,8 @@ public class StarPattern {
         char[][] pattern = new char[size][size];
 
         // Fill the array with spaces
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
+        for (int row = 0; row < size; row++) {
+            for (int  column = 0; j < size; j++) {
                 //pattern[i][j]='';
             }
         }
