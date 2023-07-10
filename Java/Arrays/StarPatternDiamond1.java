@@ -7,12 +7,12 @@ public class StarPatternDiamond1 {
         int size = scanner.nextInt();
         int middle = size / 2;
 
-        char[][] pattern = new char[size][size];
+        //char[][] pattern = new char[size][size];
 
         // Initialize the pattern array with spaces
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
-                pattern[i][j] = ' ';
+        for (int innercounter = 0; innercounter < size; innercounter++) {
+            for (int outercounter = 0; outercounter < size; outercounter++) {
+                pattern[innercounter][outercounter] = ' ';
             }
         }
 
@@ -31,9 +31,9 @@ public class StarPatternDiamond1 {
         }
 
         // Print the pattern
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
-                System.out.print(pattern[i][j]);
+        for (int innercounter = 0; innercounter < size; innercounter++) {
+            for (int outercounter = 0; outercounter < size; outercounter++) {
+                System.out.print(pattern[innercounter][outercounter]);
             }
             System.out.println();
         }
