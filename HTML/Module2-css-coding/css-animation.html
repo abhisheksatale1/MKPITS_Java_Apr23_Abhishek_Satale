@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+</head>
+<body>
+	<h1>Animation by CSS</h1>
+	<ul>
+		<li>@keyframes</li>
+		<li>animation-name</li>
+		<li>animation-duration</li>
+		<li>animation-delay</li>
+		<li>animation-interaction-count</li>
+		<li>animation-direction</li>
+		<li>animation-timing-function</li>
+		<li>animation-fill-mode</li>
+		<li>animation</li>
+	</ul>
+<hr>
+	<section>
+		<h3>@keyframes</h3>
+		<div class="div1"></div>
+	</section>
+	<style> 
+		.div1{
+		  width: 100px;
+		  height: 100px;
+		  background-color: red;
+		  animation-name: example;
+		  animation-duration: 4s;
+		  animation-delay: 1s;
+		  animation-iteration-count: 1;
+		  animation-direction: alternate-reverse;
+		}
+
+		@keyframes example {
+		  from {background-color: red;}
+		  to {background-color: yellow; width: 300px;transform: rotate(180deg);}
+		}
+	</style>
+<hr>
+	<section>
+		<h1>Animaion Direction</h1>
+		<div class="div2">
+			<ul>
+				<li>normal</li> <!-- forward -->
+				<li>reverse</li> <!-- backward -->
+				<li>alternate</li> <!-- forward then backward -->
+				<li>alternate-reverse</li> <!-- backward then forword -->
+			</ul>
+		</div>
+		<style> 
+			.div2 {
+			  width: 100px;
+			  height: 100px;
+			  background-color: red;
+			  position: relative;
+			  animation-name: examplee;
+			  animation-duration: 4s;
+			  animation-direction: reverse;  
+			}
+
+			@keyframes examplee {
+			  0%   {background-color:red; left:0px; top:0px;}
+			  25%  {background-color:yellow; left:200px; top:0px;}
+			  50%  {background-color:blue; left:200px; top:200px;}
+			  75%  {background-color:green; left:0px; top:200px;}
+			  100% {background-color:red; left:0px; top:0px;}
+			}
+		</style>
+	</section>
+<hr>
+	<section>
+		<h1>animation-timing-function</h1>
+		<div class="div3" id="div1">linear</div>
+		<div class="div3" id="div2">ease</div>
+		<div class="div3" id="div3">ease-in</div>
+		<div class="div3" id="div4">ease-out</div>
+		<div class="div3" id="div5">ease-in-out</div>
+		<style> 
+			.div3 {
+			  width: 100px;
+			  height: 50px;
+			  background-color: red;
+			  font-weight: bold;
+			  position: relative;
+			  animation: mymove 5s infinite;
+			}
+
+			#div1 {animation-timing-function: linear;}
+			#div2 {animation-timing-function: ease;}
+			#div3 {animation-timing-function: ease-in;}
+			#div4 {animation-timing-function: ease-out;}
+			#div5 {animation-timing-function: ease-in-out;}
+
+			@keyframes mymove {
+			  from {left: 0px;}
+			  to {left: 300px;border-radius: 100%;background-color: purple;}
+			}
+		</style>
+	</section>
+</body>
+</html>

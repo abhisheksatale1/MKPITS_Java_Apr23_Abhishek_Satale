@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS-Pseudo-Elemetns</title>
+	<style type="text/css">
+		div h2{
+			color: red;
+		}
+		div{
+			margin: 10px;
+			padding: 20px;
+			border: 1px groove grey;
+			width: 300px;
+			float: left;
+		}
+		p.a:first-line{
+			font-size: 36px;
+			text-decoration: underline;
+			text-decoration-color: red;
+		}
+		p.b:first-letter{
+			font-size: 24px;
+			color: pink;
+			font-family: verdana;
+		}
+		p.c:before{
+			content: url(img/bullet-point.jpg);
+			width: 10px;
+			align-content: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS-Pseudo-Elemetns</h1>
+	<div>
+		<h2>:first-line</h2>
+		<p class="a">
+			जन गण मन अधिनायक जय हे<br>
+			भारत भाग्य विधाता <br>
+			पुंजाब सिंध गुजरात मराठा<br>
+			द्रविड़ उत्कल बंग <br>
+			विंध्य हिमांचल यमुना गंगा<br>
+			उच्छल जलधि तरंग <br>
+			तव शुभ नामे जागे <br>
+			तव शुभ आशिष मांगे <br>
+			गाये तव जय गाठा <br>
+			<br>
+			जन गण मंगल दायक जय हे <br>
+			भारत भाग्य विधाता<br>
+			जय हे जय हे जय हे <br>
+			जय जय जय जय हे<br>
+		</p>
+	</div>
+	<div>
+		<h2>:first-letter</h2>
+		<p class="b">
+			जन गण मन अधिनायक जय हे<br>
+			भारत भाग्य विधाता <br>
+			पुंजाब सिंध गुजरात मराठा<br>
+			द्रविड़ उत्कल बंग <br>
+			विंध्य हिमांचल यमुना गंगा<br>
+			उच्छल जलधि तरंग <br>
+			तव शुभ नामे जागे <br>
+			तव शुभ आशिष मांगे <br>
+			गाये तव जय गाठा <br>
+			<br>
+			जन गण मंगल दायक जय हे <br>
+			भारत भाग्य विधाता<br>
+			जय हे जय हे जय हे <br>
+			जय जय जय जय हे<br>
+		</p>
+	</div>
+	<div>
+		<h2>:before</h2>
+		<p class="c">
+			जन गण मन अधिनायक जय हे<br>
+			भारत भाग्य विधाता <br>
+			पुंजाब सिंध गुजरात मराठा<br>
+			द्रविड़ उत्कल बंग <br>
+			विंध्य हिमांचल यमुना गंगा<br>
+			उच्छल जलधि तरंग <br>
+			तव शुभ नामे जागे <br>
+			तव शुभ आशिष मांगे <br>
+			गाये तव जय गाठा <br>
+			<br>
+			जन गण मंगल दायक जय हे <br>
+			भारत भाग्य विधाता<br>
+			जय हे जय हे जय हे <br>
+			जय जय जय जय हे<br>
+		</p>
+	</div>
+	<div>
+		<h2>:after</h2>
+		<p>
+			जन गण मन अधिनायक जय हे<br>
+			भारत भाग्य विधाता <br>
+			पुंजाब सिंध गुजरात मराठा<br>
+			द्रविड़ उत्कल बंग <br>
+			विंध्य हिमांचल यमुना गंगा<br>
+			उच्छल जलधि तरंग <br>
+			तव शुभ नामे जागे <br>
+			तव शुभ आशिष मांगे <br>
+			गाये तव जय गाठा <br>
+			<br>
+			जन गण मंगल दायक जय हे <br>
+			भारत भाग्य विधाता<br>
+			जय हे जय हे जय हे <br>
+			जय जय जय जय हे<br>
+		</p>
+	</div>
+</body>
+</html>

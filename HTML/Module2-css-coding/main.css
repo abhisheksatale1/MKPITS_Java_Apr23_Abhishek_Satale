@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+
+.point{
+	font-style: italic;
+	font-size: 24px;
+}
+
+.point mark{
+	background-color: #00FFFF;
+}
+
+div{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid;
+}
+
+div h3{
+	color: red;
+}

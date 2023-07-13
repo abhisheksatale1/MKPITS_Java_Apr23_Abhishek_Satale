@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advance Css Class</title>
+	<style type="text/css">
+		.p{
+			visibility: hidden;
+		}
+		@import "foldername/filename.fileextension";
+	</style>
+</head>
+<body>
+	<section>
+		<h1>Visibility</h1>
+		<div>
+			<h3>Defination</h3>
+			<p>
+				A property called visibility allows you to hide an element from view. You can use this property along with JavaScript to create very complex menu and very complex webpage layouts.<br>
+
+				You may choose to use the visibility property to hide error messages that are only displayed if the user needs to see them, or to hide answers to a quiz until the user selects an option.
+			</p>
+			<h3>Value</h3>
+			<ul>
+				<li>Visible</li>
+				<li>hidden</li>
+				<li>collapse</li>
+			</ul>
+			<h3>Visible Example</h3>
+			<p style="visibility: visible;">
+				You may choose to use the visibility property to hide error messages that are only displayed if the user needs to see them, or to hide answers to a quiz until the user selects an option.
+			</p>
+			<h3>Hidden Example</h3>
+			<p style="visibility: hidden;">
+				You may choose to use the visibility property to hide error messages that are only displayed if the user needs to see them, or to hide answers to a quiz until the user selects an option.
+			</p>
+		</div>
+	</section>
+<hr>
+	<section>
+		<h1>Layers</h1>
+		<div style = "background-color:red;
+         width:300px;
+         height:100px;
+         position:relative;
+         top:40px;
+         left:80px;
+         z-index:3">
+      </div>
+      
+      <div style = "background-color:yellow;
+         width:300px;
+         height:100px;
+         position:relative;
+         top:20px;
+         left:35px;
+         z-index:2;">
+      </div>
+      
+      <div style = "background-color:green;
+         width:300px;
+         height:100px;
+         position:relative;
+         top:0px;
+         left:120px;
+         z-index:1;">
+      </div>
+	</section>
+<hr>
+	<section>
+		<h1>Gradient Color Background</h1>
+		<h3>Types</h3>
+		<ul>
+			<li>Linear Gradients (goes down/up/left/right/diagonally)</li>
+			<li>Radial Gradients (defined by their center)</li>
+			<li>Conic Gradients (rotated around a center point)</li>
+		</ul><br>
+		<h3>Linear Gradient</h3>
+		<h5>Value</h5>
+		<div style="width: 100%;height: 200px; background-image: linear-gradient(to top right, red , yellow);">
+			<ul>
+				<li>to bottom (top - bottom)</li>
+				<li>to right</li>
+				<li>to top</li>
+				<li>to left</li>
+			</ul>
+			<ul>
+				<li>to bottom left (top right - bottom left)</li>
+				<li>to top right (bottom left - top right)</li>
+				<li>to bottom right</li>
+				<li>to to left</li>
+			</ul>
+			<h3>Multicolor gradient</h3>
+			<div style="width: 100%;height: 200px; background-image: linear-gradient(to bottom right, red, yellow, purple, green, blue);">
+				multicolor gradient
+			</div>
+		</div>
+	</section>
+<hr>
+	<section>
+		<h1>2d Transform (2d animation)</h1>
+		<h3>Value</h3>
+		<li>translate()</li>
+		<li>rotate()</li>
+		<li>scaleX()</li>
+		<li>scaleY()</li>
+		<li>scale</li>
+		<li>skewX()</li>
+		<li>skewY()</li>
+		<li>slew</li>
+		<li>matrix()</li>
+		<hr>
+		<h5>Translate</h5>
+		<div style="width: 500px;height: 200px;background-color: blue; transform: translate(100px,100px);">
+			translate from original
+		</div>
+		<h5>Translate</h5>
+		<div style="width: 500px;height: 200px;background-color: purple; transform: translateY(100px);">
+			translate from original
+		</div>
+		<h5>rotate</h5>
+		<div style="width: 500px;height: 200px;background-color: red; transform: rotate(180deg);">
+			rotate 180 degree
+			(+ = clockwise, - = anticlockwise)
+		</div>
+		<h5>scale</h5>
+		<div style="width: 500px;height: 200px;background-color: yellow; transform: /*scale(10,20)*/;">
+			actual width = 500px & height = 200px
+		</div>
+		<h5>skew</h5>
+		<div style="width: 500px;height: 200px;background-color: orange; transform: skew(0deg,5deg);">
+			skew<br>
+			<img src="img/download.jpg">
+		</div>
+	</section>
+<hr>
+	<section>
+		<h1>3d Transformation/animation</h1>
+		<h3>Value</h3>
+		<ul>
+			<li>rotateX()</li>
+			<li>rotateY()</li>
+			<li>rotateZ()</li>
+		</ul>
+		<div>
+			<h3>rotateX()</h3>
+			<p class="p-hover">
+				You may choose to use the visibility property to hide error messages that are only displayed if the user needs to see them, or to hide answers to a quiz until the user selects an option.
+			</p>
+			<style type="text/css">
+				.p-hover{
+					width: 200px;
+					height: 200px;
+					overflow: hidden;
+					border: 1px solid;
+				}
+				.p-hover:hover{
+					transform: rotate(360deg);
+				}
+			</style>
+		</div>
+	</section>
+<hr>
+	<section>
+		<h1>Transition Effect</h1>
+		<ul>
+			<li>transition</li>
+			<li>transition-delay</li>
+			<li>transition-duration</li>
+			<li>transition-property</li>
+			<li>transition-timing-function</li>
+		</ul>
+		<h3>transition</h3>
+		<div class="transition">
+			<p>
+				You may choose to use the visibility property to hide error messages that are only displayed if the user needs to see them, or to hide answers to a quiz until the user selects an option.
+			</p>
+		</div>
+		<style type="text/css">
+			.transition{
+				width: 200px;
+			  height: 200px;
+			  background: red;
+			  transition: width 12s;
+			}
+			.transition:hover{
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+	</section>
+<hr>
+	<section>
+		<style>
+				div {
+		  width: 100px;
+		  height: 100px;
+		  background: red;
+		  transition: width 2s;
+		}
+
+		#div1 {transition-timing-function: linear;}
+		#div2 {transition-timing-function: ease;}
+		#div3 {transition-timing-function: ease-in;}
+		#div4 {transition-timing-function: ease-out;}
+		#div5 {transition-timing-function: ease-in-out;}
+
+		div:hover {
+		  width: 300px;
+		}
+		</style>
+		</head>
+		<body>
+
+		<h1>The transition-timing-function Property</h1>
+
+		<p>Hover over the div elements below, to see the different speed curves:</p>
+
+		<div id="div1">linear</div><br>
+		<div id="div2">ease</div><br>
+		<div id="div3">ease-in</div><br>
+		<div id="div4">ease-out</div><br>
+		<div id="div5">ease-in-out</div><br>
+	</section>
+<hr>
+	<section>
+		<h1>Transition Delay</h1>
+		<div id="div6">linear with transition delay</div>
+		<style type="text/css">
+			#div6 {transition-timing-function: linear;transition-delay: 2s;}
+		</style>
+	</section>
+<hr>
+	<section>
+		<h1>Trasition with Transformation</h1>
+		<div>
+			<p>
+				Transition with rotate transformation
+			</p>
+		</div>
+		<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(360deg);
+}
+</style>
+	</section>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/*horizontal navbar*/
+ul{
+	list-style-type: none;
+}
+.a li{
+	float: left;
+}
+.active{
+	background-color: red;
+}
+
+/*Fixed Navigation*/
+.b ul{
+	position: fixed;
+	top: 0%;
+	width: 100%;
+	background-color: grey;
+}
+.b li{
+	float:left;
+}
+
+.c ul{
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
+	background-color: grey;
+}
+.c li{
+	float: left;
+}
+
+/*sticky navigation*/
+.d ul{
+	list-style-type: none;
+	position: sticky;
+	top: 0%;
+	
+}
+
+.d li{
+	float: left;
+	text-align: center;
+	background-color: pink;
+}

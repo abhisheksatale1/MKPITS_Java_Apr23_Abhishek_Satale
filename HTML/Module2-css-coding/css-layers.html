@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS-Layers</title>
+	<style type="text/css">
+		.a{
+			background-color: red;
+			width: 200px;
+			height: 100px;
+			padding: 20px;
+			position: relative;
+			z-index: 1;
+		}
+		.b{
+			background-color: orange;
+			width: 200px;
+			height: 100px;
+			padding: 20px;
+			position: relative;
+			top: -50px;
+			left: 10px;
+			z-index: 2;
+		}
+		.c{
+			background-color: pink;
+			width: 200px;
+			height: 100px;
+			padding: 20px;
+			position: relative;
+			top: -100px;
+			left: 20px;
+			z-index: 3;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS-Layers</h1>
+	<div class="a"> 
+		<h4>Aditya</h4>
+	</div>
+	<div class="b">
+		<h4>Trupti</h4>
+	</div>
+	<div class="c">
+		<h4>Ashlesh</h4>
+	</div>
+</body>
+</html>

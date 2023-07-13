@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Text</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h1 style="text-align: center;color: red;font-style: italic; font-family: 'Ranchers', cursive;">4. CSS Text</h1>
+	<p style="text-align: center;" class="point">
+		In this Fourth Chapter we teach you how to manipulate & decorate text using CSS properties. You can set following font properties of an element –
+	</p>
+	<p>
+		<ol>
+			<li class="point">
+				The <mark>color</mark> property is used to set the color of a text.
+			</li>
+			<li class="point">
+				The <mark>direction</mark> property is used to set the text direction.
+			</li>
+			<li class="point">
+				The <mark>letter-spacing</mark> property is used to add or subtract space between the letters that make up a word.
+			</li>
+			<li class="point">
+				The <mark>word-spacing</mark> property is used to add or subtract space between the words of a sentence.
+			</li>
+			<li class="point">
+				The <mark>text-indent</mark> property is used to indent the text of a paragraph.
+			</li>
+			<li class="point">
+				The <mark>text-align</mark> property is used to align the text of a document.
+			</li>
+			<li class="point">
+				The <mark>text-decoration</mark> property is used to underline, overline, and strikethrough text.
+			</li>
+			<li class="point">
+				The <mark>text-transform</mark> property is used to capitalize text or convert text to uppercase or lowercase letters.
+			</li>
+			<li class="point">
+				The <mark>white-space</mark> property is used to control the flow and formatting of text.
+			</li>
+			<li class="point">
+				The <mark>text-shadow</mark> property is used to set the text shadow around a text.
+			</li>
+		</ol>
+	</p><hr>
+<!-- How To Set Color -->
+	<div>
+		<h3>1. How To Set Color</h3>
+		<p>
+			The following example demonstrates how to set the text color. Possible value could be any color name in any valid format or by Hex, HSL, RGB value.
+		</p>
+		<ol type="a">
+				<li>
+					<mark>By Color Name</mark><br>
+					<p style = "color:red;">
+         				Coder Fuel Infotech
+      				</p>
+				</li>
+				<li>
+					<mark>By Hex Value</mark>
+					<p style="color: #0000FF;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+				<li>
+					<mark>By HSL Value</mark>
+					<p style="color: hsl(120,100%,25%);">
+						Coder Fuel Infotech
+					</p>
+				</li>
+				<li>
+					<mark>By RGB Value</mark>
+					<p style="color: rgb(128, 0, 128);">
+						Coder Fuel Infotech
+					</p>
+				</li>
+			</ol>
+	</div>
+<!-- How to set text direction -->
+	<div>
+		<h3>2. How to set text direction</h3>
+		<p>The following example demonstrates how to set the direction of a text. Possible values are ltr or rtl.<br>The <b>ltr</b> is by default direction for text.</p>
+			<ol type="a">
+				<li>
+					<mark>ltr (Left to Right)</mark> It's an by default direction value.<br>
+					<p style="direction: ltr;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+				<li>
+					<mark>rtl (Right to Left)</mark><br>
+					<p style="direction: rtl;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+			</ol>
+	</div>
+<!-- How to set Space between Characters -->
+	<div>
+		<h3>3. How to set Space between Characters</h3>
+		<p>
+			The following example demonstrates how to set the space between characters. Possible values are normal or a number specifying space.
+		</p>
+			<ol>
+				<li>
+					<p style = "letter-spacing:5px;">
+        				Coder Fuel Infotech
+      				</p>
+				</li>
+			</ol>
+	</div>		
+<!-- How to set Space between Words -->
+	<div>
+		<h3>4. How to set Space between Words</h3>
+		<p>
+			The following example demonstrates how to set the space between words. Possible values are normal or a number specifying space.
+		</p>
+			<ol>
+				<li>
+					<p style = "word-spacing:10px;">
+        				Coder Fuel Infotech
+      				</p>
+				</li>
+			</ol>
+	</div>	
+<!-- How to set Text Indent -->
+	<div>
+		<h3>5. How to set Text Indent</h3>
+		<p>
+			The following example demonstrates how to indent the first line of a paragraph. Possible values are % or a number specifying indent space.
+		</p>
+			<ol type="a">
+				<li>
+					<mark>By number</mark>
+					<p style = "text-indent:1cm;">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</li>
+				<li>
+					<mark>By %</mark>
+					<p style="text-indent: 5%;">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</p>
+				</li>
+			</ol>
+	</div>
+<!-- How to set Text Allignment -->
+	<div>
+		<h3>6. How to set Text Allignment</h3>
+		<p>
+			The following example demonstrates how to align a text. Possible values are left, right, center, justify.
+		</p>
+			<ol type="a">
+				<li>
+					<mark>Left Alignment</mark>
+					<p style="text-align: left;">Coder Fuel Infotech</p>
+				</li>
+				<li>
+					<mark>Center Alignment</mark>
+					<p style="text-align: center;">Coder Fuel Infotech</p>
+				</li>
+				<li>
+					<mark>Right Alignment</mark>
+					<p style="text-align: right;">Coder Fuel Infotech</p>
+				</li>
+				<li>
+					<mark>Justify Alignment</mark>
+					<p style="text-align: justify;">Coder Fuel Infotech</p>
+				</li>
+			</ol>
+	</div>
+<!-- How decorate the Text -->
+	<div>
+		<h3>7. How decorate the Text</h3>
+		<p>
+			The following example demonstrates how to decorate a text. Possible values are none, underline, overline, line-through, blink.
+		</p>
+			<ol type="a">
+				<li>
+					<mark>Underline</mark>
+					<p style="text-decoration: underline;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+				<li>
+					<mark>Overline</mark>
+					<p style="text-decoration: overline;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+				<li>
+					<mark>Line-through</mark>
+					<p style="text-decoration: line-through;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+				<li>
+					<mark>Blink</mark>
+					<p style="text-decoration: blink;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+			</ol>
+	</div>
+<!-- How to set Text Cases -->
+	<div>
+		<h3>8. How to set Text Cases</h3>
+		<p>
+			The following example demonstrates how to set the cases for a text. Possible values are none, capitalize, uppercase, lowercase.
+		</p>
+			<ol>
+				<li>
+					<mark>Capitalize</mark>
+					<p style = "text-transform:capitalize;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+				<li>
+					<mark>Uppercase</mark>
+					<p style = "text-transform:uppercase;">
+						Coder Fuel Infotech
+					</p>
+				</li><li>
+					<mark>Lowercase</mark>
+					<p style = "text-transform:lowercase;">
+						Coder Fuel Infotech
+					</p>
+				</li>
+			</ol>
+	</div>
+<!-- How to set White Space between Text -->
+	<div>
+		<h3>9. How to set White Space between Text</h3>
+		<p>
+			The following example demonstrates how white space inside an element is handled. Possible values are normal, pre, nowrap.
+		</p>
+			<ol type="a">
+				<li>
+					<mark>Pre</mark>
+					<p style="white-space: pre;">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis tellus libero. Vestibulum vitae finibus libero. In placerat ex congue quam pretium, ut aliquam magna pulvinar. Nullam at cursus nibh, nec commodo justo. Quisque pretium elit vitae tellus cursus congue. Donec vel accumsan sapien.
+					</p>
+				</li>
+				<li>
+					<mark>Pre-line</mark>
+					<p style="white-space: pre-line;">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis tellus libero. Vestibulum vitae finibus libero. In placerat ex congue quam pretium, ut aliquam magna pulvinar. Nullam at cursus nibh, nec commodo justo. Quisque pretium elit vitae tellus cursus congue. Donec vel accumsan sapien.
+					</p>
+				</li>
+				<li>
+					<mark>Pre-wrap</mark>
+					<p style="white-space: pre-wrap;">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis tellus libero. Vestibulum vitae finibus libero. In placerat ex congue quam pretium, ut aliquam magna pulvinar. Nullam at cursus nibh, nec commodo justo. Quisque pretium elit vitae tellus cursus congue. Donec vel accumsan sapien.
+					</p>
+				</li>
+				<li>
+					<mark>nowrap</mark>
+					<p style="white-space: nowrap;">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis tellus libero. Vestibulum vitae finibus libero. In placerat ex congue quam pretium, ut aliquam magna pulvinar. Nullam at cursus nibh, nec commodo justo. Quisque pretium elit vitae tellus cursus congue. Donec vel accumsan sapien.
+					</p>
+				</li>
+			</ol>
+	</div>
+
+	<div>
+		<h3>10. How to set Text Shadow</h3>
+		<p>
+			The following example demonstrates how to set the shadow around a text. This may not be supported by all the browsers.<br><br>
+			<mark>Output</mark><br>
+			<p style = "text-shadow:4px 4px 8px blue;">Coder Fuel Infotech</p>
+		</p>
+	</div>
+	<h4 style="text-align: center;">The End</h4>
+</body>
+</html>

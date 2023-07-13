@@ -1,0 +1,15 @@
+h3{
+	color: pink;
+	font-size: 24px;
+}
+
+@import "background-color.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+@charset "iso-8859-1";
+
+@font-face{
+	font-size: 36px !important;
+	font-weight: 200px !important;
+}

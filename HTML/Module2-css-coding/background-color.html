@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS-bg-color</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<style type="text/css">
+		.bg{
+			background-color: red;
+		}
+		.opacity{
+			background-color: green;
+			opacity: 0.8;
+		}
+		.opacity1{
+			background-color: #000000;
+			opacity: 0.6;
+			color: #ffffff;
+		}
+		.bg-image{
+			background-image: url("img/download.jpg");
+		}
+		.bg-img-repeat{
+			background-image: url("img/download.jpg");
+			background-repeat: no-repeat;
+			color: #ffffff; 
+		}
+		.bg-img-repeat-y{
+			background-image: url("img/download.jpg");
+			background-repeat: repeat-y;
+			color: #ffffff; 
+		}
+		.bg-img-repeat-x{
+			background-image: url("img/download.jpg");
+			background-repeat: repeat-x;
+			color: #ffffff; 
+		}
+		.bg-img-position{
+			background-image: url("img/download.jpg");
+			background-repeat: no-repeat;
+			background-position: top;
+		}
+		.bg-img-attachment{
+			background-image: url("img/download.jpg");
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+		}
+		.bg-img-attachment1{
+			background-image: url("img/download.jpg");
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-attachment: fixed;
+		}
+		.bg{
+			background: #ffffff url("img/download.jpg") no-repeat right top fixed;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="bg-ex">Hello Trainnee</h1>
+	<p>By external css</p>
+	<br>
+	<br>
+	<h1 class="bg">Hello Trainnee</h1>
+	<p>By internal css</p>
+	<br>
+	<br>
+	<h1 style="background-color: blue;">Hello Trainnee</h1>
+	<p>By inline css</p>
+	<br><br>
+	<div class="bg">
+		<h3>To division</h3>
+		<p>hvffcxcghjklzjjl</p>
+	</div>
+<hr>
+	<h1>Background color with opacity</h1>
+	<p class="opacity">
+		ndbcjbdbcbcbhwehbw
+	</p><br>
+	<p class="opacity1">
+		ndbcjbdbcbcbhwehbw
+	</p>
+	<hr><hr>
+	<h1>2. Background Image</h1>
+	<p class="bg-image">
+		cvhvvflknkh<br>
+		hvhjvghjfvgtc<br>
+		gchgfjyhgug
+	</p>
+	<h3>Background repeat</h3>
+	<ul>
+		<li>repeat</li>
+		<li>no-repeat</li>
+		<li>repeat-x</li>
+		<li>repeat-y</li>
+	</ul>
+	<br>
+	<div class="bg-img-repeat">
+		<h1>no-repeat</h1>
+	</div>
+	<div class="bg-img-repeat-x">
+		<h1>repeat-x</h1>
+	</div>
+	<div class="bg-img-repeat-y">
+		<h1>repeat-y</h1>
+		<h1>repeat-y</h1>
+		<h1>repeat-y</h1>
+		<h1>repeat-y</h1>
+		<h1>repeat-y</h1>
+		<h1>repeat-y</h1>
+	</div>
+	<hr>
+	<hr>
+	<h1>Background position</h1>
+	<div class="bg-img-position">
+		<h1>position</h1>
+		<h1>right top</h1>
+		<h1>right bottom</h1>
+		<h1>left top</h1>
+		<h1>left bottom</h1>
+		<h1>top</h1>
+		<li>bottom</li>
+	</div>
+	<hr>
+	<hr>
+	<h1>Background attachment</h1>
+	<div class="bg-img-attachment">
+		<h1>Attachment</h1>
+		<h1>fixed</h1>
+		<h1>scroll</h1>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>end</h1>
+	</div>
+	<br>
+	<div class="bg-img-attachment1">
+		<h1>Attachment</h1>
+		<h1>fixed</h1>
+		<h1>scroll</h1>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1>end</h1>
+	</div>
+</body>
+</html>

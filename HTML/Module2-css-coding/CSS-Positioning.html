@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css-Positioning</title>
+	<style type="text/css">
+		div.a{
+			background-color: pink;
+			position: relative;
+			
+		}
+		div.b{
+			background-color: orange;
+			position: absolute;s
+		}
+		div.c{
+			background-color: red;
+			color: white;
+			position: fixed;
+			top: -10px;
+		}
+		div{
+			margin: 10px;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="margin-top: 150px;">Css-Positioning</h1>
+
+	<div class="c">
+		<h4>fixed Positioning</h4>
+		<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+	</div>
+	<div class="a">
+		<h4>Relative Positioning</h4>
+		<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+	</div>
+	<div class="b">
+		<h4>Absolute Positioning</h4>
+		<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="a">
+		<h4>Relative Positioning</h4>
+		<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+	</div>
+	<div class="b">
+		<h4>Absolute Positioning</h4>
+		<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="a">
+		<h4>Relative Positioning</h4>
+		<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+	</div>
+	<div class="b">
+		<h4>Absolute Positioning</h4>
+		<p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+	</div>
+<br><br><br>
+<hr><hr>
+<br><br><br>
+
+<style type="text/css">
+	.static{
+		position: static;
+		border:1px solid red; 
+		/*its priority default it means lower*/
+	}
+	.relative{
+		position: relative;
+		/*top,left,right,bottom*/
+		border:1px solid blue;
+		/*its priority first it means higher*/
+	}
+	.absolute{
+		position: absolute;
+		border: 1px solid green;
+		/*it denote accurate width and height of html element*/
+	}
+	.sticky{
+		position: sticky;
+		border:1px solid orange;
+		bottom: 0;
+	}
+</style>
+    <h3>Sticky position</h3>
+	<p>
+		In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+	</p>
+	<div class="sticky">
+		This division's position is set to be sticky.
+	</div>
+	<h3>Static position</h3>
+	<p>
+		In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+	</p>
+	<div class="static">
+		This division's position is set to be static.
+	</div>
+	<br>
+	<hr>
+	<br>
+	<h3>Relative position</h3>
+	<p>
+		In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+	</p>
+	<div class="relative">
+		This division's position is set to be Relative.
+	</div>
+	<br>
+	<hr>
+	<br>
+	<h3>Absolute position</h3>
+	<p>
+		In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+	</p>
+	<div class="absolute">
+		This division's position is set to be Absolute.
+	</div>
+	<br><br><br>
+	<hr><hr>
+	<br><br><br>
+	
+	<div class="absolute1">
+		<p>
+			2.In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+	</p>
+	<div class="relative1">
+		<style type="text/css">
+			.relative1{
+				border:1px solid red;
+				position: relative;
+				bottom: 80px;
+			}
+			.absolute1{
+				border:1px solid blue;
+				position: absolute;
+			}
+		</style>
+		<p>
+			In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.
+		</p>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BG Video</title>
+	<style type="text/css">
+
+		/* for 100% width and height to cover the entire window */
+		#myVideo {
+		  position: fixed;
+		  left: 0;
+		  right: 0;
+		  bottom: 0;
+		  top: 0;
+		  min-width: 100%;
+		  min-height: 100%;
+		}
+
+	/* To Add some content at the top or bottom side on the video as an overlay */
+		.content {
+		  position: fixed;
+		  top: 50px;
+		  background: rgba(0, 0, 0, 0.5);
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<video autoplay muted loop id="myVideo">
+  			<source src="video/sample.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="content">
+	  <h1>Hello Students</h1>
+	  <p>How are you?</p>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  <br>
+	  hi
+	</div>
+</body>
+</html>

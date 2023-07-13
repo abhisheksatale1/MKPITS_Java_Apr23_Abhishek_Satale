@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Border-Outline</title>
+	<style type="text/css">
+		.bb{
+			border:1px solid red;
+		}
+		.bc{
+			border-bottom: 1px solid red;
+		}
+		.bd{
+			border-left: 1px solid red;
+		}
+		.be{
+			border-right: 1px solid red;
+		}
+		.bf{
+			border-top: 1px solid red;
+		}
+		.lr{
+			border-left: 5px solid red;
+			border-right: 5px solid red;
+		}
+		.tb{
+			border-top: 1px solid red;
+			border-bottom: 1px solid red;
+		}
+		.tr{
+			border-top: 1px solid red;
+			border-right: 1px solid red;
+		}
+		.bl{
+			border-left: 1px solid red;
+			border-bottom: 1px solid red;
+		}
+		.r{
+			border: 1px solid red;
+			border-radius: 10px;
+		}
+		.tr{
+			border: 1px solid red;
+			border-top-right-radius: 30px;
+		}
+		/* border type class */
+		.solid{
+			border: 1px solid red;
+			/* 1px is use for border width
+			   solid is use for border style
+			   red is use for border color
+			 */
+		}
+		.dashed{
+			border:1px dashed red;
+		}
+		.dotted{
+			border: 1px red;
+			border-style: dotted;
+		}
+		.double{
+			border: 1px double red;
+		}
+		.groove{
+			border: 1px groove red;
+			/* for 3d border */
+		}
+		.ridge{
+			border: 1px ridge red;
+		}
+		.inset{
+			border: 1px inset red;
+		}
+		.outset{
+			border: 1px outset red;
+		}
+		.hidden{
+			border: 1px hidden red;
+		}
+		.none{
+			border: 1px none red;
+		}
+		/* saperate tags */
+		.sap{
+			border-width: 1px;
+			border-style: solid;
+			border-color: red;
+			border-radius: 10px;
+		}
+		.sap1{
+			border: 1px solid;
+			border-top-color: green;
+			border-bottom-color: yellow;
+			border-left-color: red;
+			border-right-color: orange;
+
+		}
+		.sap2{
+			border: 1px red;
+			border-top-style: dashed;
+			border-bottom-style: double;
+			border-left-style: ridge;
+			border-right-style: outset;
+		}
+		.outline{
+			outline: 1px solid red;
+			border: 1px solid;
+			/* it use to add outline border to any html elements */
+		}
+		.outline1{
+			outline: 1px solid red;
+			outline-offset: 1px;
+			border: 1px solid;
+			/* ofset use for adding space between outline & border */
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h1>Border</h1>
+		<div class="bb">
+			<h5>Basic Border</h5>
+		</div><br>
+		<div class="bc">
+			<h5>Bottom Border</h5>
+		</div>
+		<div class="bd">
+			<h5>Left Border</h5>
+		</div>
+		<div class="be">
+			<h5>Right Border</h5>
+		</div>
+		<div class="bf">
+			<h5>Top Border</h5>
+		</div>
+		<hr>
+		<div class="lr">
+			<h5>Left & Right Border</h5>
+		</div>
+		<div class="tb">
+			<h5>Top & Bottom Border</h5>
+		</div>
+		<div class="tr">
+			<h5>Top & Right Border</h5>
+		</div>
+		<div class="bl">
+			<h5>Bottom & left Border</h5>
+		</div>
+		<hr>
+		<div class="r">
+			<h5>Border radius</h5>
+		</div><br>
+		<div class="tr">
+			<h5>Border radius top right</h5>
+		</div>
+		<hr>
+		<div>
+			<h2>Border Type</h2>
+			<div class="solid">
+				1.solid
+			</div><br>
+			<div class="dashed">
+				2. Dashed
+			</div><br>
+			<div class="dotted">
+				3. Dotted
+			</div><br>
+			<div class="double">
+				4. Double
+			</div><br>
+			<div class="'groove">
+				5. Groove
+			</div><br>
+			<div class="ridge">
+				6. Ridge
+			</div><br>
+			<div class="inset">
+				7. inset
+			</div><br>
+			<div class="outset">
+				8. Outset
+			</div><br>
+			<div class="hidden">
+				9. Hidden
+			</div><br>
+			<div class="none">
+				10. None
+			</div>
+		</div>
+		<hr>
+		<div class="sap">
+			<h5>by saperate tags</h5>
+		</div><br>
+		<div class="sap1">
+			<h5>by saperate border color tags</h5>
+		</div><br>
+		<div class="sap2">
+			<h5>by multi border style tags</h5>
+		</div>
+	</section>
+	<br>
+	<hr>
+	<br>
+	<section>
+		<h2>Outline</h2>
+		<div class="outline">
+			<h5>Default Basic Outline</h5>
+		</div><br>
+		<div class="outline1">
+			<h5>Outline with offset</h5>
+		</div>
+	</section>
+</body>
+</html>

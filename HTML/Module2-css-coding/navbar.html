@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navigationbar by CSS</title>
+	<style type="text/css">
+		nav ul{
+			list-style-type: none;
+		}
+		.vertical ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 100px;
+			background-color: red;
+		}
+		.vertical li a{
+			display: block;
+			color: white;
+			padding: 5px;
+			text-decoration: none;
+		}
+		.vertical li a:hover:not(.active){
+			background-color: yellow;
+			color: black;
+			border-right: 1px solid;
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		.vertical li a.active{
+			background-color: grey;
+			color: black;
+		}
+		/*vertical1 navbar start*/
+		.vertical1 ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			background-color: red;
+		}
+		.vertical1 li a{
+			display: block;
+			color: white;
+			padding: 5px;
+			text-decoration: none;
+			border-bottom: 2px solid;
+			text-align: center;
+		}
+		.vertical1 li a:hover:not(.active){
+			background-color: white;
+			color: black;
+			border-right: 1px solid;
+		}
+		.vertical1 li a.active{
+			background-color: green;
+			color: white;
+		}
+		.vertical1 li:last-child{
+			background-color: orange;
+			color: white;
+		}
+		/*Full height with fixed property navbar start*/
+		.fixed ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 25%;
+			position: fixed;
+			height: 100%;
+			overflow: auto;
+			background-color: green;
+		}
+		.p{
+			margin: 25%;
+			padding: 5px;
+			height: 1000px;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+		<li><a href="#1">Home</a></li>
+		<li><a href="#2">About</a></li>
+		<li><a href="#3">Services</a></li>
+		<li><a href="#4">Contact</a></li>
+	</ul>
+	</nav>
+<hr>
+	<div>
+		<h3>Vertical Navigation</h3>
+		<nav class="vertical">
+			<ul>
+				<li><a class="active" href="#1">Home</a></li>
+				<li><a href="#2">About</a></li>
+				<li><a href="#3">Services</a></li>
+				<li><a href="#4">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+<hr>
+	<div>
+		<h3>Center link and border</h3>
+		<nav class="vertical1">
+			<ul>
+				<li><a class="active" href="#1">Home</a></li>
+				<li><a href="#2">About</a></li>
+				<li><a href="#3">Services</a></li>
+				<li><a href="#4">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+<hr>
+	<div>
+		<h3>Full height with fixed property</h3>
+		<nav class="fixed">
+			<ul>
+				<li><a class="active" href="#1">Home</a></li>
+				<li><a href="#2">About</a></li>
+				<li><a href="#3">Services</a></li>
+				<li><a href="#4">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="p">
+			<p>
+				In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. <br>
+				In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. <br>
+				In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available.  <br>
+				In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before the final copy is available. 
+			</p>
+		</div>
+	</div>
+</body>
+</html>
