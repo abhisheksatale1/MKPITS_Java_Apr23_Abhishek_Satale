@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MKP IT Limited Company</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="MkpitsmainPage.css">
+    <link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+rel="stylesheet"
+/>
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+  rel="stylesheet"
+/>
+
+</head>
+<body class="bodys">
+    <!--nevbar Starts-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/download.png" alt="" height="60px" width="60px" class="logo" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active px-5 text-white" aria-current="page" href="MkpitsMainpage.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-5 text-white" href="#">Admission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-5 text-white" href="#ourcompany">Job Placement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active px-5 text-white" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-5 text-white" href="#courses" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item  text-bg-dark" href="#java">Java</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item  text-bg-dark" href="#dotnet">DotNet</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item  text-bg-dark" href="#python">Python</a></li>
+              </ul>
+            </li>
+            </ul>
+            
+            <button id="button" type="button" class="btn btn-black"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+  Register Now
+</button>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <!--nevbar ends-->
+
+
+  <div class="container">
+    <h2 class="text-center">Admission Form</h2>
+    <div class="success-message" style="display: none;">
+      Thank you for your submission!
+    </div>
+    <form id="admission-form">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone:</label>
+        <input type="tel" id="phone" name="phone" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="course" class="form-label">Course:</label>
+        <select id="course" name="course" class="form-select" required>
+          <option value="">Select a course</option>
+          <option value="engineering">Java</option>
+          <option value="medicine">Python</option>
+          <option value="business">DotNet</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <input type="submit" value="Submit" class="btn btn-primary">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('admission-form');
+    const successMessage = document.querySelector('.success-message');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      successMessage.style.display = 'block';
+      form.reset();
+    });
+  </script>
+</body>
+</html>

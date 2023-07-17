@@ -53,27 +53,27 @@ rel="stylesheet"
               <a class="nav-link active px-5 text-white" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5 text-white" href="#">About</a>
+              <a class="nav-link px-5 text-white" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active px-5 text-white" href="#">Admission</a>
+              <a class="nav-link active px-5 text-white" href="addimission.html">Admission</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active px-5 text-white" href="#">Job Placement</a>
+              <a class="nav-link active px-5 text-white" href="#ourcompany">Job Placement</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active px-5 text-white" href="#">Contact</a>
+              <a class="nav-link active px-5 text-white" href="#contact">Contact</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle px-5 text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle px-5 text-white" href="#courses" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Courses
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item  text-bg-dark" href="#">Java</a></li>
+                <li><a class="dropdown-item  text-bg-dark" href="#java">Java</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item  text-bg-dark" href="#">DotNet</a></li>
+                <li><a class="dropdown-item  text-bg-dark" href="#dotnet">DotNet</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item  text-bg-dark" href="#">Python</a></li>
+                <li><a class="dropdown-item  text-bg-dark" href="#python">Python</a></li>
               </ul>
             </li>
             </ul>
@@ -136,7 +136,7 @@ rel="stylesheet"
     <!--carosal ends-->
     <!---gird starts-->
     <div>
-      <h2 class="aboutus"> About-Us </h2>
+      <h2 class="aboutus" id="about"> About-Us </h2>
     <div class="container ">
       <div class="row">
         <div class="col-8">
@@ -161,16 +161,28 @@ rel="stylesheet"
     <!--grid ends-->
       <!--cources starts-->
       <div>
-       <h2 class="popular"> POPULAR COURSES</h2>
+       <h2 class="popular" id="courses"> POPULAR COURSES</h2>
        <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
             <img src="/java.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               
-              <p class="card-text"><h3>Java Fullstack Developer</h3><br>
+              <p class="card-text"><h3 id="java">Java Fullstack Developer</h3><br>
                 Fullstack Java developer will learn end to end implementation of the java project which includes git, UML, CI/CD pipeline, requirement gathering and deployment of java capstone project on cloud.</p>
-                <button type="button" class="btn btn-outline-primary text-center active" >Know More</button>
+                <button type="button" class="btn btn-outline-primary text-center active" > <a href="#">Know More</a></button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/python.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              
+              <p class="card-text"><h3 id="dotnet">DotNet Fullstack Developer</h3>
+                Fullstack Dotnet developer will learn end to end implementation of the .NET project which includes git, UML, CI/CD pipeline, requirement gathering and deployment of .NET capstone project on cloudrequirement gathering and deployment of python capstone project on</p>
+                <button type="button" class="btn btn-outline-primary text-center" ><a href="#">Know More</a></button>
             </div>
             
           </div>
@@ -181,22 +193,12 @@ rel="stylesheet"
             <img src="/dotnet.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               
-              <p class="card-text"><h3>Python Fullstack Developer</h3><br>
+              <p class="card-text"><h3 id="python">Python Fullstack Developer</h3><br>
                 Fullstack Python with Django and Flask developer will learn end to end implementation of the python project which includes git, UML, CI/CD pipeline, requirement gathering and deployment of python capstone project on cloud.</p>
-                <button type="button" class="btn btn-outline-primary text-center" >Know More</button>
+                <button type="button" class="btn btn-outline-primary text-center" ><a href="#">Know More</a></button>
             </div>
             
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="/python.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              
-              <p class="card-text"><h3>DotNet Fullstack Developer</h3>
-                Fullstack Dotnet developer will learn end to end implementation of the .NET project which includes git, UML, CI/CD pipeline, requirement gathering and deployment of .NET capstone project on cloudrequirement gathering and deployment of python capstone project on</p>
-                <button type="button" class="btn btn-outline-primary text-center" >Know More</button>
-            </div>
+          
            
               
             </div>
@@ -252,8 +254,8 @@ rel="stylesheet"
 
 <!--companys starts -->
 <div>
-  <h2 class="company"> OUR STUDENTS WORKS FOR <br></h2>
-  <marquee behavior="" direction="top">
+  <h2 class="company" id="ourcompany"> OUR STUDENTS WORKS FOR <br></h2>
+  <marquee behavior="" direction="Left">
 <div class="container text-center">
   <div class="row row-cols">
     
@@ -415,7 +417,7 @@ rel="stylesheet"
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
+      <p id="contact">Get connected with us on social networks:</p>
     </div>
     <!-- Left -->
 
