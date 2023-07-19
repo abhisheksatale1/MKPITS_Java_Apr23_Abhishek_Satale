@@ -1,0 +1,9 @@
+.card-img-top{
+    border-radius: 50%;
+}
+.btn btn-primary{
+    align-items: center;
+}
+#row2{
+    display: none;
+}

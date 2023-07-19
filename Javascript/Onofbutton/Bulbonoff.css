@@ -1,0 +1,19 @@
+
+.buttonfirst{
+    border-radius: 20%;
+    background-color: darkslategray;
+    border: 5px solid black;
+}
+.buttonfirst{
+    border-radius: 20%;
+    background-color: darkslategray;
+    border: 5px solid black;
+}
+.buttonsecond{
+    border-radius: 20%;
+    background-color: darkslategray;
+    border: 5px solid black;
+}
+#light2{
+    display: none;
+}

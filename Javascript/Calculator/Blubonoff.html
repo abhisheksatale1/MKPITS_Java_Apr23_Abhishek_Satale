@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bulbonoff.css">
+</head>
+<body>
+    <div  id="row1">
+        <img src="/On.png" alt="" height="80px" width="80px">
+        <button onclick="getswitch()">On</button>
+    </div>
+
+    <div  id="row2">
+        <img src="/Offblub.png" alt="" height="80px" width="80px">
+        <button onclick="getswitch()">off</button>
+    </div>
+
+    
+    <script>
+        function getswitch(){
+            if(document.getElementById("row1").style.disply=='none'){
+                document.getElementById("row1").style.display='block'
+                document.getElementById("row2").style.display='none'
+            }
+            else{
+                document.getElementById("row1").style.display='none'
+                document.getElementById("row2").style.display='block'
+            }
+        }
+    </script>
+</body>
+</html>
