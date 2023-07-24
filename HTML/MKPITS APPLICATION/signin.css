@@ -1,0 +1,19 @@
+
+.container{
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    border: 2px red;
+    
+    
+}
+.sign{
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.card-body p-5 text-center{
+    box-shadow: 5px 4px 6px black;
+}
