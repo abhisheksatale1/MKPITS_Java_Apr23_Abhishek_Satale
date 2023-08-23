@@ -21,6 +21,6 @@ public class TakingFileName {
         } catch (IOException e) {
             System.out.println(e);
         }
-    
+
     }
 }

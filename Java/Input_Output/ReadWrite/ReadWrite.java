@@ -10,6 +10,7 @@ public class ReadWrite {
         while (str!=null){
             bw.write(str);
             str=br.readLine();
+
         }
         bw.close();
         System.out.println("file copied......");
