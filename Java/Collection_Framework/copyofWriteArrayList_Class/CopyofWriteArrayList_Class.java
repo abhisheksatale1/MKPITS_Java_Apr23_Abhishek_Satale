@@ -15,7 +15,9 @@ public class CopyofWriteArrayList_Class {
         System.out.println(number);
         Collections.sort(number);
         System.out.println(number);
-        ((CopyOnWriteArrayList<Integer>) number).addIfAbsent(number,23);
+        System.out.println(number.remove(1));
+        System.out.println(number);
+//        ((CopyOnWriteArrayList<Integer>) number).addIfAbsent(number,23);
         }
 
     }
