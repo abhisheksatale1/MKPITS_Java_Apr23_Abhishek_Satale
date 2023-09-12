@@ -1,0 +1,5 @@
+package LambdaExpression;
+
+interface ShapeLambdaExpression {
+    
+}
