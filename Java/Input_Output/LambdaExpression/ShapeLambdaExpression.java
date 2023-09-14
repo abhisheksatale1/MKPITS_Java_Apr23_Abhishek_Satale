@@ -1,5 +1,0 @@
-package LambdaExpression;
-
-interface ShapeLambdaExpression {
-    
-}
