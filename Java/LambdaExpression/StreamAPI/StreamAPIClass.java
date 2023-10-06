@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class StreamAPIClass {
     public static void main(String[] args) {
         List<String> cities = Arrays.asList("Wardha","Pune","Nagpur","Mumbai");
-        List list= cities.stream().map(c ->c).collect(Collectors.toList());
+        List list= cities.stream().map(c->c).collect(Collectors.toList());
         System.out.println(list);
 
 
@@ -19,6 +19,7 @@ public class StreamAPIClass {
         cities.stream().sorted().forEach(System.out::println);
 
         //skiping
+        System.out.println("Skping values---------------------");
         cities.stream().skip(2).forEach(System.out::println);
 
         int Sumofnumbers=numbers.stream().reduce(0,(sum,n)->sum+n);
