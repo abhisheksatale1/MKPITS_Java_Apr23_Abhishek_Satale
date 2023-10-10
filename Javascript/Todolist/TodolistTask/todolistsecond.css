@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/wood.jpg);
+  width: 100%;
+  height: 600;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgb(145,91,66);
+background: linear-gradient(183deg, rgba(145,91,66,1) 18%, rgba(139,120,129,1) 55%);
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 4px 5px 8px rgba(166, 207, 84, 0.3);
+}
+
+h2 {
+  text-align: center;
+  color: rgb(232, 168, 4);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+li.checked {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li::before {
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  color: #888;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  color: #f44336;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #d32f2f;
+}
+
+.addBtn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 30px;
+  width: 40px;
+}
+
+.addBtn:hover {
+  background-color: #484c48;
+  box-sizing: border-box;
+  height: 30px;
+  width: 40px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

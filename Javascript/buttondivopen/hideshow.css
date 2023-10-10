@@ -1,0 +1,15 @@
+.displayfirst{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: black;
+     
+}
+.displaysecond{
+    position: absolute;
+    width: 50%;
+    height: 200px;
+    background-color: rgb(152, 197, 48);
+    top: 100px;
+    left: 100px;
+}

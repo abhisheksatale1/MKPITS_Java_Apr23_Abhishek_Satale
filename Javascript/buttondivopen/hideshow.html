@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hideshowdisplay with button</title>
+    <link rel="stylesheet" href="hideshow.css">
+</head>
+<body>
+    <div id="index">
+        <button  onclick="getSwitch()" class="buttonfirst">ON</button>
+    </div>
+
+    <div class="displayfirst" id="index2">
+        
+        <div class="displaysecond">
+            <button onclick="getSwitch1()" class="buttonsecond">OFF</button>
+        </div>
+    </div>
+
+    <script>
+         
+        function getSwitch()
+        {
+            if(document.getElementsByid("index").style.display=='none'){
+                    document.getElementsByid("index").style.display='block'
+                    document.getElementsByid("index2").style.display="none"
+            }
+            else{
+                document.getElementsByid("index2").style.display='block'
+                    document.getElementsByid("index").style.display="none"
+            }
+        }
+        function getSwitch1()
+        {
+            if(document.getElementsByid("index2").style.display=='none'){
+                    document.getElementsByid("index2").style.display='block'
+                    document.getElementsByid("index").style.display="none"
+            }
+            else{
+                document.getElementsByid("index").style.display='block'
+                    document.getElementsByid("index2").style.display="none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
