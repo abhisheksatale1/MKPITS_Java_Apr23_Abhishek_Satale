@@ -1,0 +1,17 @@
+USE SAKILA
+DELIMITER //
+
+CREATE PROCEDURE ABCS(IN num1 INT, IN num2 INT, IN num3 INT)
+BEGIN
+  IF num1 >= num2 AND num2 <= num3 THEN
+    SELECT num1;
+  ELSEIF num2 >= num3 AND num3 <= num1 THEN
+    SELECT num2;
+  ELSE
+    SELECT num3;
+  END IF;
+END;
+
+DELIMITER ;
+
+CALL ABCS(23, 25, 56);
