@@ -1,5 +1,6 @@
 
- 
+ select sakila
+
  -- (23) Get the first name, last name, and email of customers who have rented more
  -- than 10 films.
     select* from customer
