@@ -2,7 +2,7 @@ use sakila
  
  -- (9)  Retrieve the total revenue generated for each city.
   
-    select* from payment -- customer_id, amount
+    select * from payment -- customer_id, amount
     select* from customer -- address_id
     select* from address  -- city_id
     select* from city  -- city_id
