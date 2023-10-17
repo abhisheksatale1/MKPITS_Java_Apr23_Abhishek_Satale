@@ -1,0 +1,6 @@
+SELECT STAFF_ID,
+CASE STAFF_ID WHEN 1 THEN 'NAGPUR'
+			  WHEN 2 THEN 'PUNE'
+              ELSE 'INVALID' END
+              FROM STAFF
+              
