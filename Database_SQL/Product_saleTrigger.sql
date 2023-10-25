@@ -15,7 +15,7 @@ select * from product_details;
 create table sale(
 	sale_id int,
     product_id int,
-    Quentity int
+    Quentity_stock int
     );
 insert into sale value (1,101,60);
 insert into sale value(2,102,70);
@@ -26,11 +26,12 @@ delimiter //
 create trigger after_sale_trigger after insert on sale 
 for each row
 begin 
-update product
-set Quentity=Quentity-new.Quentity
-where product_id= new.product_id;
+update Product_details
+set Quentity=Quentity - new. Quentity_stock 
+where product_id= new. product_id;
 end;
 //  delimiter ;
 select * from product_details 
+select * from sale
 drop trigger after_sale_trigger 
  

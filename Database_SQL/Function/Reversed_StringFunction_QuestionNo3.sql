@@ -7,7 +7,7 @@ deterministic
 begin
 declare reversestring varchar(45);
 set reversestring=rev_str;
-return reverse(reversestring);
+return reverse(reversestring); -- for reversing the string 
 end
 //
 delimiter ;

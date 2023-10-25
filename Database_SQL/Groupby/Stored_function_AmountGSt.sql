@@ -10,4 +10,5 @@ return gst;
 end //
   DELIMITER ;
 --   use sakila
-  select payment_id,amount,callgst(amount) as gst, amount + callgst(amount) from payment;
+-- select callgst(45.34)
+  select payment_id,amount,callgst(amount) as gst, amount + callgst(amount) as total from payment;

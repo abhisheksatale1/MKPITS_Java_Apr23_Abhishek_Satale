@@ -9,9 +9,9 @@ set counter = 10;
 while counter<0 do
 --  select counter; 
 	set counter = counter-1;
-    end while;
+   
 	SELECT counter;
-	
+	 end while;
     END;
     //
     DELIMITER ;
