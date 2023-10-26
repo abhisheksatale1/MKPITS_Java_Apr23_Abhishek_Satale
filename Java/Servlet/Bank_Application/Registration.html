@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Registration Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0px;
+    }
+
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    form {
+      margin: 0;
+      width: 600px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid black;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #000;
+      color: bisque;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+<!--  <div class="container">-->
+    <h1>Bank Registration Form</h1>
+
+    <form action="Insert_Data" method="post">
+      <input type="text" name="User_id" placeholder="User_iD">
+      <input type="password" name="Password" placeholder="Password">
+      <input type="text" name="Name" placeholder="Name">
+      <input type="text" name="Address" placeholder="Address">
+      <input type="text" name="city" placeholder="City">
+      <input type="number" name="balance" placeholder="Balance">
+
+      <button type="submit">Register</button>
+    </form>
+<!--  </div>-->
+</body>
+</html>

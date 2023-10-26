@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    form {
+      width: 300px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 40px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid red;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <h1> <center> Login Page</center> </h1>
+
+  <form action="Login_servlet">
+    <input type="text" name="user_id" placeholder="User ID">
+    <input type="password" name="password" placeholder="Password">
+    <center> <button type="submit">  Login </button> </center>
+     <center> <button type="submit">  sign_up </button> 
+      <button type="submit"><a href="Registration.html"> New_User </a></button> </center>
+  </form>
+</body>
+</html>
