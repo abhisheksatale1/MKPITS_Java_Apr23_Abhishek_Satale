@@ -1,29 +1,25 @@
-package Bank_Servlets;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package Khatabook;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author Abhishek
  */
-public class Login_servlet extends HttpServlet {
+public class RegistrationServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,41 +30,40 @@ public class Login_servlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    String User_id;
-    String Password;
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            String User_id = request.getParameter("user_id");
-            String Password= request.getParameter("password");
+            String User_id=request.getParameter("user_id");
+            String Password =request.getParameter("Password");
+            String Customer_name=request.getParameter("Customer_name");
+            String Address=request.getParameter("Address");
+            int balance = Integer.parseInt(request.getParameter("balance"));
+            
+            
             /* TODO output your page here. You may use following sample code. */
             
             try{
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank", "root", "Abhi@123");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Khata_book", "root", "Abhi@123");
                 out.println("driver loaded");
-            PreparedStatement preparedStatement = connection.prepareStatement("select * from Account_Details where User_id=? and Password=? ");
+            PreparedStatement preparedStatement = connection.prepareStatement("insert into Customer_details values(?,?,?,?,?)");
             preparedStatement.setString(1,User_id);
             preparedStatement.setString(2,Password);
-            ResultSet resultset=preparedStatement.executeQuery();
-            
-            if(resultset.next()){
-                HttpSession hs=request.getSession(true);
-                hs.setAttribute("u_id",User_id);
-                RequestDispatcher requestdispatcher = request.getRequestDispatcher("Display.html");
-                requestdispatcher.forward(request, response);
-                
+            preparedStatement.setString(3,Customer_name);
+            preparedStatement.setString(4,Address);
+            preparedStatement.setDouble(5,balance);
+            int returnValue=preparedStatement.executeUpdate();
+            if(returnValue!=0){
+                System.out.println("insert data");
             }else {
-                out.println("incorrect User_id Password");
-                out.println("<a href='index.html'>Login Page</a>");
+                System.out.println("Data not inserted");
             }
             }
             catch(Exception e)
             {
             out.println(e);
             }
-            
         }
     }
 

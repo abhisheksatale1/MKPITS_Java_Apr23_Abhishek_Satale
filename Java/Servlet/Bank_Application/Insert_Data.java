@@ -46,7 +46,8 @@ public class Insert_Data extends HttpServlet {
             try{
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank", "root", "Abhi@123");
-                out.println("driver loaded");
+                out.println("You are registered");
+                out.println("<a href='index.html'>Login Page</a>");
             PreparedStatement preparedStatement = connection.prepareStatement("insert into Account_Details values(?,?,?,?,?,?)");
             preparedStatement.setString(1,User_id);
             preparedStatement.setString(2,Password);
