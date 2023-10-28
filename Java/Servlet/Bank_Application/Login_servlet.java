@@ -56,6 +56,7 @@ public class Login_servlet extends HttpServlet {
             if(resultset.next()){
                 HttpSession hs=request.getSession(true);
                 hs.setAttribute("u_id",User_id);
+                
                 RequestDispatcher requestdispatcher = request.getRequestDispatcher("Display.html");
                 requestdispatcher.forward(request, response);
                 

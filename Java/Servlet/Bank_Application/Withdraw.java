@@ -24,7 +24,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author Abhishek
  */
-public class Deposite extends HttpServlet {
+public class Withdraw extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -34,8 +34,6 @@ public class Deposite extends HttpServlet {
      * @param response servlet response
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
-     * @throws java.sql.SQLException
-     * @throws java.lang.ClassNotFoundException
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException, ClassNotFoundException {
@@ -48,7 +46,7 @@ public class Deposite extends HttpServlet {
         HttpSession httpsession =request.getSession(true);  
        String userid = httpsession.getAttribute("u_id").toString();
         Date date=new java.sql.Date(httpsession.getCreationTime());
-        String Transationtype= "Deposit";
+        String Transationtype= "Withdraw";
             /* TODO output your page here. You may use following sample code. */
             
                 Class.forName("com.mysql.cj.jdbc.Driver");
@@ -65,11 +63,11 @@ public class Deposite extends HttpServlet {
             
             int resultSet = preparedStatement.executeUpdate();
             if(resultSet != 0){
-                out.println("amount inserted successfully");
+                out.println("amount Credited successfully");
             }else{
-                out.println("unable to insert amount");
+                out.println("unable to Credited amount");
             }
-            PreparedStatement prepareUpdateStatement = connection.prepareStatement("update Account_Details set balance = balance + ? where user_id = ? ");
+            PreparedStatement prepareUpdateStatement = connection.prepareStatement("update Account_Details set balance = balance - ? where user_id = ? ");
             prepareUpdateStatement.setString(2, userid);
             prepareUpdateStatement.setInt(1, Amount);
             
@@ -85,7 +83,6 @@ public class Deposite extends HttpServlet {
             }
         }
     }
-        
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -102,7 +99,7 @@ public class Deposite extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (SQLException | ClassNotFoundException ex) {
-            Logger.getLogger(Deposite.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Withdraw.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -120,7 +117,7 @@ public class Deposite extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (SQLException | ClassNotFoundException ex) {
-            Logger.getLogger(Deposite.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Withdraw.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -135,4 +132,3 @@ public class Deposite extends HttpServlet {
     }// </editor-fold>
 
 }
-

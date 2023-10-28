@@ -1,16 +1,17 @@
+package Bank_Servlets;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Bank_Servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,7 +25,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author Abhishek
  */
-public class Deposite extends HttpServlet {
+public class Statement extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -41,52 +42,58 @@ public class Deposite extends HttpServlet {
             throws ServletException, IOException, SQLException, ClassNotFoundException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-        
-        int Amount=Integer.parseInt(request.getParameter("amount")); 
-        
-        
-        HttpSession httpsession =request.getSession(true);  
-       String userid = httpsession.getAttribute("u_id").toString();
-        Date date=new java.sql.Date(httpsession.getCreationTime());
-        String Transationtype= "Deposit";
-            /* TODO output your page here. You may use following sample code. */
             
-                Class.forName("com.mysql.cj.jdbc.Driver");
-                out.println("driver loaded");
-                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank", "root", "Abhi@123");
+            
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            out.println("driver loaded");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Bank", "root", "Abhi@123");
                 out.println("connection established");
                 
-            PreparedStatement preparedStatement = connection.prepareStatement("insert into Transactions values(?,?,?,?)");
-            preparedStatement.setString(1, userid);
-            preparedStatement.setDate(2, date);
-            preparedStatement.setInt(3, Amount);
-            preparedStatement.setString(4, Transationtype);
+                HttpSession httpsession = request.getSession(true);
+            String Userid = httpsession.getAttribute("u_id").toString();
+            out.println("<h1>UserId : "+Userid+"</h1>");
             
+            PreparedStatement preparedstatement = connection.prepareStatement("select Transaction_date, Amount, Amount_type from Transactions where user_id=?");
+                    preparedstatement.setString(1, Userid);
+                    ResultSet resultSet = preparedstatement.executeQuery(); 
+            /* TODO output your page here. You may use following sample code. */
             
-            int resultSet = preparedStatement.executeUpdate();
-            if(resultSet != 0){
-                out.println("amount inserted successfully");
-            }else{
-                out.println("unable to insert amount");
-            }
-            PreparedStatement prepareUpdateStatement = connection.prepareStatement("update Account_Details set balance = balance + ? where user_id = ? ");
-            prepareUpdateStatement.setString(2, userid);
-            prepareUpdateStatement.setInt(1, Amount);
-            
-            
-            
-            
-
-           int resultUpdateSet = prepareUpdateStatement.executeUpdate();
-            if(resultUpdateSet != 0){
-                out.println("Balance Updated");
-            }else{
-                out.println("unable to Update Balance");
-            }
-        }
-    }
+                  
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet Statement</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<table align=center border=1 cellspacing=3 cellpadding=10>"
+            + "<tr>"
+                    +"<th>Transaction Date</th>"
+                    +"<th>Amount</th>"
+                    +"<th>Transaction Type</th>"
+            +"</tr>");
+             
+            while(resultSet.next()){
+            out.println("<tr>"
+                    +"<td>"+resultSet.getDate(1)+"</td>"    
+                    +"<td>"+resultSet.getDouble(2)+"</td>"    
+                    +"<td>"+resultSet.getString(3)+"</td>"    
+                    + "</tr>");
+              }
+            out.println("</table>");
+            out.println("</body>");
+            out.println("</html>");
+           
         
-
+            }
+            
+                     
+            
+            
+        }
+    
+        
+    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -102,7 +109,7 @@ public class Deposite extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (SQLException | ClassNotFoundException ex) {
-            Logger.getLogger(Deposite.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Statement.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -120,9 +127,10 @@ public class Deposite extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (SQLException | ClassNotFoundException ex) {
-            Logger.getLogger(Deposite.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(Statement.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+}
+    
 
     /**
      * Returns a short description of the servlet.
@@ -135,4 +143,3 @@ public class Deposite extends HttpServlet {
     }// </editor-fold>
 
 }
-
