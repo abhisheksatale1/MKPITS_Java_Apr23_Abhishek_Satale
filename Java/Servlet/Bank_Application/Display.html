@@ -1,28 +1,67 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <form action="Display" method="post">
-            <marquee direction="up">  <div> <h1>  Welcome to State Bank of India </h1> <br>
-              <h1>How Can I help you ? </h1>
-              
-              
-          </div></marquee>
-            
-            <a href="Deposite.html"> Deposite </a> &nbsp &nbsp <a href="Withdraw.html"> withdraw </a> &nbsp &nbsp 
-            <a href="#">Log_Out </a> &nbsp &nbsp <a href="#">Transfer </a> &nbsp &nbsp 
-            <a href="Statement"> Statement </a>
-                    </form>
-        
-        
-    </body>
+<head>
+    <title>State Bank of India</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: rgb(48,152,206);
+background: radial-gradient(circle, rgba(48,152,206,1) 22%, rgba(23,138,212,1) 34%);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #005588;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to State Bank of India</h1>
+        <h1>How Can I help you?</h1>
+    </header>
+
+    <nav>
+        <a href="Deposite.html">Deposit</a>
+        <a href="Withdraw.html">Withdraw</a>
+        <a href="TransfarMoney.html">Transfer</a>
+        <a href="Statement">Statement</a>
+        <a href="LogOut">Log Out</a>
+
+    </nav>
+
+    <div class="container">
+        <!-- Your content goes here -->
+    </div>
+</body>
 </html>
