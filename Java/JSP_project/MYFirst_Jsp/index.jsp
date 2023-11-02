@@ -2,24 +2,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+    <title>JSP - Hello World</title>
 </head>
 <body>
-<form  action="index.jsp" method="post">
-  <table>
-    <tr>
-      <input type="text" name="rollno" placeholder="Enter the roll No">
-    </tr>
-    <tr>
-      <input type="text" name="name" placeholder="Enter the Name">
-    </tr>
-    <tr>
-      <input type="text" name="address" placeholder="Enter the address">
-    </tr>
-    <tr>
-      <input type="text" name="city" placeholder="Enter the City">
-    </tr>
-  </table>
+<form action="Form.jsp" method="post">
+    <table>
+        <tr>
+            <lable >RollNo:</lable>
+            <input type="text" name="roll">
+        </tr>
+        <tr>
+            <lable >Name:</lable>
+            <input type="text" name="name">
+        </tr>
+        <tr>
+            <lable >Address:</lable>
+            <input type="text" name="address">
+        </tr>
+        <tr>
+            <lable >City;</lable>
+            <input type="text" name="city">
+        </tr>
+
+    </table>
 </form>
 </body>
 </html>
