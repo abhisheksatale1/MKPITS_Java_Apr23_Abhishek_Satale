@@ -15,10 +15,10 @@
 </head>
 <body>
 
-  <form action="" method="post">
+  <form action="Controller/LoginJSP.jsp" method="post">
     <div align="center" margin-top="400px">
-    <input type="text" name=Userid" placeholder="--user_id---"><br>
-    <input type="text" name=Password" placeholder="--User_Password---"><br>
+    <input type="text" name="Userid" placeholder="--user_id---"><br>
+    <input type="text" name="Password" placeholder="--User_Password---"><br>
     <input type="submit" value="Submit"><br>
     Signup<a href="Registration.jsp">New_User</a>
 </div>

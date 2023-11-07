@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.example.bank_applicationjsp_mvc.Banking_Services.Bank_Service" %><%--
   Created by IntelliJ IDEA.
   User: Abhishek
   Date: 11/4/2023
@@ -12,8 +12,18 @@
 <jsp:setProperty name="user" property="user_Password" param="UserPassword"/>
 <jsp:setProperty name="user" property="user_name" param="Username"/>
 <jsp:setProperty name="user" property="user_Address" param="UserAddress"/>
-<jsp:setProperty name="user" property="user_City" param="Usercity"/>
+<jsp:setProperty name="user" property="user_City" param="UserCity"/>
 <jsp:setProperty name="user" property="user_Balance" param="UserBalance"/>
+<%
+    Bank_Service bankService = new Bank_Service();
+    if(bankService.insertRecord(user)!=0){
+    out.println("inserted");
+
+    }
+    else{
+        out.println("not inserted");
+    }
+%>
 
 
 <html>
