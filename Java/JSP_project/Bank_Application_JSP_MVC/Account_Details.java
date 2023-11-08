@@ -1,5 +1,7 @@
 package com.example.bank_applicationjsp_mvc.Model;
 
+import java.sql.Timestamp;
+
 public class Account_Details {
     private String user_id;
     private String user_Password;
@@ -10,6 +12,19 @@ public class Account_Details {
 
     private Double user_Balance;
 
+    private Timestamp timestamp;
+
+    public Timestamp getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(Timestamp timestamp) {
+        this.timestamp = timestamp;
+    }
+
+    public Account_Details() {
+    }
+
     public Account_Details(String user_id, String user_Password, String user_name, String user_Address, String user_City, Double user_Balance) {
         this.user_id = user_id;
         this.user_Password = user_Password;
@@ -19,8 +34,7 @@ public class Account_Details {
         this.user_Balance = user_Balance;
     }
 
-    public Account_Details() {
-    }
+
 
     public String getUser_id() {
         return user_id;

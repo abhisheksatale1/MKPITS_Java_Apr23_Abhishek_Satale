@@ -1,12 +1,37 @@
 package com.example.bank_applicationjsp_mvc.Model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class User_Transactions {
     private String loginUser_id;
+
+    private String transfer_userid;
+
+    public String getTransfer_userid() {
+        return transfer_userid;
+    }
+
+    public void setTransfer_userid(String transfer_userid) {
+        this.transfer_userid = transfer_userid;
+    }
+
     private Date transaction_date;
     private Double transaction_amount;
     private String transaction_type;
+
+    private String transaction_type2;
+
+    public User_Transactions(String transaction_type2) {
+        this.transaction_type2 = transaction_type2;
+    }
+
+    public String getTransaction_type2() {
+        return transaction_type2;
+    }
+
+    public void setTransaction_type2(String transaction_type2) {
+        this.transaction_type2 = transaction_type2;
+    }
 
     public User_Transactions() {
     }
@@ -26,8 +51,8 @@ public class User_Transactions {
         this.loginUser_id = loginUser_id;
     }
 
-    public Date getTransaction_date() {
-        return transaction_date;
+    public java.sql.Date getTransaction_date() {
+        return (java.sql.Date) transaction_date;
     }
 
     public void setTransaction_date(Date transaction_date) {
@@ -50,3 +75,4 @@ public class User_Transactions {
         this.transaction_type = transaction_type;
     }
 }
+

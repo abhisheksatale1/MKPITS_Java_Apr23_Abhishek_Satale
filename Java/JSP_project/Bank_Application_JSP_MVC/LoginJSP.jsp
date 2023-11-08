@@ -1,6 +1,7 @@
 <%@ page import="com.example.bank_applicationjsp_mvc.Banking_Services.Bank_Service" %>
 <%@ page import="java.sql.ResultSet" %>
-<%@ page import="com.mysql.cj.Session" %><%--
+<%@ page import="com.mysql.cj.Session" %>
+<%@ page import="java.sql.Timestamp" %><%--
   Created by IntelliJ IDEA.
   User: Abhishek
   Date: 11/6/2023
@@ -9,6 +10,20 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <jsp:useBean id="user" class="com.example.bank_applicationjsp_mvc.Model.Account_Details" scope="application"/>
+<jsp:useBean id="log" class="com.example.bank_applicationjsp_mvc.Model.Log" scope="application"/>
+<%----------------------------for log------------------------------%>
+
+<%
+
+    long value=session.getCreationTime();
+    Timestamp timestamps = new java.sql.Timestamp(value);
+    String activity="login";
+
+%>
+<jsp:setProperty name="user" property="timestamp" value="<%=timestamps%>"/>
+
+
+<%----------------------------for login---------------------------%>
 <jsp:setProperty name="user" property="user_id" param="Userid"/>
 <jsp:setProperty name="user" property="user_Password" param="Password"/>
 
@@ -18,7 +33,7 @@
 
 
     Bank_Service bankService = new Bank_Service();
-    ResultSet resultSet= bankService.checkRecord(user);
+    ResultSet resultSet= bankService.checkRecord(user,activity);
     if(resultSet.next()){
         out.println("Login successfully");
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("Display.html");

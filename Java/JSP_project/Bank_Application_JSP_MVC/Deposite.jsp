@@ -14,7 +14,7 @@
     <form action="Controller/DepositeJSP.jsp" method="post">
 
             <input type="number" name="amount" placeholder="Enter the Amount">
-            <input type="submit" name="Submit">
+            <input type="submit" value="Submit">
 
     </form>
 
