@@ -3,7 +3,6 @@ package com.example.bank_applicationjsp_mvc.Banking_Services;
 import com.example.bank_applicationjsp_mvc.Model.Account_Details;
 import com.example.bank_applicationjsp_mvc.Model.User_Transactions;
 
-import java.security.PublicKey;
 import java.sql.*;
 
 public class Bank_Service {
@@ -156,6 +155,35 @@ public class Bank_Service {
         }
         return result;
     }
+
+
+    public ResultSet balance_And_Statement(User_Transactions user_transactions){
+        ResultSet resultSet=null;
+        try {
+       PreparedStatement peparedStatement2 = connection.prepareStatement("select Transaction_Date,Transaction_Amount,Transaction_Type from User_Transactions where LoginUser_id=?");
+            peparedStatement2.setString(1, user_transactions.getLoginUser_id());
+            resultSet=peparedStatement2.executeQuery();
+
+
+
+        }catch (Exception exception){
+            System.out.println(exception);
+        }
+
+        return resultSet;
+    }
+    public ResultSet totalBalance(Account_Details accountDetails){
+        ResultSet resultSet=null;
+        try {
+            PreparedStatement preparedStatement5=connection.prepareStatement("select User_Balance from Account_Details where Users_id=?");
+            preparedStatement5.setString(1,accountDetails.getUser_id());
+            resultSet=preparedStatement5.executeQuery();
+        }catch (Exception exception){
+            System.out.println(exception);
+        }
+        return resultSet;
+    }
+
 
 
 }

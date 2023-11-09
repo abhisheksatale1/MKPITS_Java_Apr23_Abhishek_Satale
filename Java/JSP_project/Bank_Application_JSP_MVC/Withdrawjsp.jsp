@@ -15,7 +15,7 @@
     String Transaction_type= "withdraw";
 
 %>
-<jsp:setProperty name="withdraw" property="transfer_userid" value="<%=Userid%>"/>
+<jsp:setProperty name="withdraw" property="loginUser_id" value="<%=Userid%>"/>
 <jsp:setProperty name="withdraw" property="transaction_date" value="<%=transationdate%>"/>
 <jsp:setProperty name="withdraw" property="transaction_amount" param="amount"/>
 <jsp:setProperty name="withdraw" property="transaction_type" value="<%=Transaction_type%>"/>
