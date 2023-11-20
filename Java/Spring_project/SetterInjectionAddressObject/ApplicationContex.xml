@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">>
+    <bean id="address1" class="Address.Address">
+        <property name="addressline1" value="Digori nagpur"></property>
+        <property name="city" value="nagpur"></property>
+        <property name="state" value="Maharashra"></property>
+        <property name="country" value="India"></property>
+        
+    </bean>
+    <bean name="obj" class="Address.Address">
+        <property name="id" value="101"></property>
+        <property name="name" value="sachin"></property>
+        <property name="address" ref="address"></property>
+        
+ </bean>
+</beans>
