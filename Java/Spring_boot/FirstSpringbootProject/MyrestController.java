@@ -8,9 +8,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class MyrestController {
     @Value("${stud-name}")
     private String name;
+    @Value("${stud-last}")
+    private String lastname;
 
     @GetMapping ("/")
     public String display (){
-        return "hello"+" "+name;
+
+        return "hello"+" "+name+""+lastname;
     }
 }
