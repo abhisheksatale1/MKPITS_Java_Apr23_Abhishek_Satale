@@ -11,6 +11,13 @@ public class Main {
     praticeClass.name="abhi";
 
         System.out.println("id"+praticeClass.id+"name"+praticeClass.name);
+
+        Pratice_program2 praticeProgram2 = new Pratice_program2();
+        praticeProgram2.pratice_class1();
+
+        Program_Three programThree = new Program_Three();
+        programThree.program_Three();
+
     }
 
 
