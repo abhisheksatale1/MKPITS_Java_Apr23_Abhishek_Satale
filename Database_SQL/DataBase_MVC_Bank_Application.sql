@@ -22,3 +22,11 @@ FOREIGN KEY(LoginUser_id) REFERENCES Account_Details(Users_id)
 );
 select * from User_Transactions
 show tables 
+
+create table log(timeStamps timestamp, activity varchar(50),Users_id varchar(50),
+constraint p_k foreign key(Users_id) references Account_Details(Users_id)
+)
+
+select * from log
+
+
