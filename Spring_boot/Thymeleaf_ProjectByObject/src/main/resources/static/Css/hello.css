@@ -1,0 +1,14 @@
+h1{
+    background-color: antiquewhite;
+    border: 5px black;
+}
+.info{
+    background-color: navajowhite;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+.button{
+    align-content: center;
+}
