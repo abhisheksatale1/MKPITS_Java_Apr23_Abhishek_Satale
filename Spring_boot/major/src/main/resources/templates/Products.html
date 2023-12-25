@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product form</title>
+</head>
+<body>
+<table>
+    <tr >
+        <th>Product id</th>
+        <th>Product Name</th>
+        <th>Category Id</th>
+        <th>Product Price</th>
+        <th>Product Weight</th>
+        <th>product Discription</th>
+        <th>Image Name</th>
+    </tr>
+    <tr th:each="pr ,prd: ${prod}">
+        <td th:text="${prd.index+1}">1</td>
+        <td th:text="${pr.name}"></td>
+        <td th:text="${pr.category}"></td>
+        <td th:text="${pr.price}"></td>
+        <td th:text="${pr.weight}"></td>
+        <td th:text="${pr.description}"></td>
+        <td th:text="${pr.imageName}"></td>
+    </tr>
+</table>
+
+
+</body>
+</html>

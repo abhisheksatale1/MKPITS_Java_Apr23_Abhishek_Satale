@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/postdata}" method="post" th:object="${productDTO}" enctype="multipart/form-data">
+    <input type="hidden" name="id" th:field="*{id}">
+    <div>
+        <input type="text" required th:field="*{name}" name="ProductName" placeholder="Enter the Product name">
+    </div>
+    <div>
+        <select th:field="*{categoryId}" name="category">
+            <option th:each="cr, cate :${categories}"
+                    th:value="${cr.id}"
+                    th:text="${cr.name}"
+            >
+
+
+        </select>
+    </div>
+    <div>
+        <input type="number" required th:field="*{price}" name="Price" placeholder="Enter the price">
+    </div>
+    <div>
+        <input type="number" required th:field="*{weight}" name="Weight" placeholder="Enter the weight">
+    </div>
+    <div>
+        <input type="text" required th:field="*{description}" name="Description" placeholder="Enter the description">
+    </div>
+    <div>
+        <input type="file" name="productImage" accept="image/jpeg">
+        <img src="#" height="100px" width="100px" th:src="@{/productImage/}">
+    </div>
+    <input type="submit" th:value="submit">
+
+</form>
+</body>
+</html>

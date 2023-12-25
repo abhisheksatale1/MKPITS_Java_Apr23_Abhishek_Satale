@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+    <th scope="col">SN</th>
+    <th scope="col">Category Name</th>
+    <th scope="col">Delete</th>
+    <th scope="col">Update</th>
+    </tr>
+    <tr th:each=" cate, ct: ${catego}">
+        <td th:text="${ct.index+1}">1</td>
+        <td th:text="${cate.name}"></td>
+        <td><a th:href="@{/categories/delete/{id}(id=${cate.id})}">delete</a></td>
+        <td><a th:href="@{/categories/update/{id}(id=${cate.id})}">update</a></td>
+    </tr>
+</table>
+</body>
+</html>
