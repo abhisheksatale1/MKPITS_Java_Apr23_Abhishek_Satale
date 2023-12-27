@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image List</title>
+</head>
+<body>
+<h1>Image List</h1>
+
+<!-- Display the list of images -->
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="image : ${images}">
+        <td th:text="${image.id}"></td>
+        <td th:text="${image.imageName}"></td>
+        <td>
+            <img th:src="@{'data:image/png;base64,' + #strings.bytes(image.imageData)}" alt="Image"/>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
